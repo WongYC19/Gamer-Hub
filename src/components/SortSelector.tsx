@@ -23,7 +23,7 @@ const SortSelector: React.FC<Props> = ({ onSelectSortOrder, sortOrder }) => {
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
-        Order by : {currentSortOrder?.label}
+        Order by : {currentSortOrder?.label ?? "Relevance"}
       </MenuButton>
 
       <MenuList>
